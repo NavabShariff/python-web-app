@@ -17,6 +17,10 @@ spec:
       containers:
       - image: navabnaeem/python-images:version-print
         name: nginx
+        command: 
+        - /bin/sh
+        - -c
+        - exit 1
         env:
         - name: APP_VERSION
-          value: v3
+          value: v4

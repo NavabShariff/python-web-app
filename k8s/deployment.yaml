@@ -24,4 +24,4 @@ spec:
         env:
         - name: APP_VERSION
           value: v4
-      restartPolicy: Never
+      # restartPolicy: Never

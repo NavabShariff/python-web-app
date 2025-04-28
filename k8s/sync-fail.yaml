@@ -4,6 +4,7 @@ metadata:
   name: fail-sync-health-check
   annotations:
     # argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
     argocd.argoproj.io/hook: SyncFail
 spec:
   backoffLimit: 0   # <--- No retries on failure

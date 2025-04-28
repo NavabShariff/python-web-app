@@ -3,12 +3,10 @@ kind: Job
 metadata:
   name: vault-health-check
   annotations:
-    # argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook: SyncFail
+    argocd.argoproj.io/hook: PreSync
+    # argocd.argoproj.io/hook: SyncFail
 spec:
   backoffLimit: 0   # <--- No retries on failure
-  completions: 1    # <--- Only 1 successful run needed
-  parallelism: 1 
   template:
     spec:
       containers:
@@ -25,4 +23,3 @@ spec:
             echo "Vault is up and running."
           fi
       restartPolicy: Never
-  # backoffLimit: 3 

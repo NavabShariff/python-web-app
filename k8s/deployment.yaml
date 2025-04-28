@@ -17,6 +17,6 @@ spec:
       containers:
       - image: navabnaeem/python-images:version-print
         name: nginx
-      env:
-      - name: APP_VERSION
-        value: v2
+        env:
+        - name: APP_VERSION
+          value: v2

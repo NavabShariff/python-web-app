@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: python-web-app
+  name: python-web-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python-web-app
+  template:
+    metadata:
+      labels:
+        app: python-web-app
+    spec:
+      containers:
+      - image: navabnaeem/python-images:version-print
+        name: nginx
+      env:
+      - name: APP_VERSION
+        value: v1

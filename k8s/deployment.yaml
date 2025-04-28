@@ -15,7 +15,7 @@ spec:
         app: python-web-app
     spec:
       containers:
-      - image: navabnaeem/python-images:version-prints
+      - image: navabnaeem/python-images:version-print
         name: nginx
         env:
         - name: APP_VERSION

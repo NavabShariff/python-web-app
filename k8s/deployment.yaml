@@ -23,5 +23,5 @@ spec:
         # - echo "Hello python"
         env:
         - name: APP_VERSION
-          value: v4
+          value: v5
       # restartPolicy: Never

@@ -3,8 +3,8 @@ kind: Job
 metadata:
   name: vault-health-check
   annotations:
-    argocd.argoproj.io/hook: PreSync
-    # argocd.argoproj.io/hook: SyncFail
+    # argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook: SyncFail
 spec:
   backoffLimit: 0   # <--- No retries on failure
   template:

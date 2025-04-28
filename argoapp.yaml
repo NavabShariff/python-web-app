@@ -17,3 +17,9 @@ spec:
      - ApplyOutOfSync=true
     automated:
       selfHeal: true
+    retry:
+      limit: 1
+      backoff:
+        duration: 5s    # <-- Wait 5 seconds before first retry
+        factor: 2       # <-- Multiply wait time by 2 on each retry
+        maxDuration: 3m # <-- Maximum total wait time

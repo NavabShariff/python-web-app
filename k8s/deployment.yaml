@@ -17,10 +17,10 @@ spec:
       containers:
       - image: navabnaeem/python-images:version-print
         name: python
-        # command: 
-        # - /bin/sh
-        # - -c
-        # - echo "Hello python"
+        command: 
+        - /bin/sh
+        - -c
+        - echo "Hello python"
         env:
         - name: APP_VERSION
           value: v6

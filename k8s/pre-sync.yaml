@@ -15,7 +15,7 @@ spec:
         command: 
         - /bin/sh
         - -c
-        - echo "This is preSync"
+        - exit 1
           # if [ "$(curl -s -o /dev/null -w "%{http_code}" https://vault-ui.vault.svc.cluster.local/v1/sys/health)" -ne 200 ]; then
           #   echo "Vault is not running properly. Exiting..."
           #   exit 1

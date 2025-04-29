@@ -3,7 +3,7 @@
         "owner": "shariff",
         "name": "dev",
         "path": "k8s/dev-manifests",
-        "address": "http://kubernetes.default.svc",
+        "address": "https://kubernetes.default.svc",
         "namespace": "dev"
     }
 }

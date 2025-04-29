@@ -1,0 +1,9 @@
+{
+    "cluster": {
+        "owner": "shariff",
+        "name": "prod",
+        "path": "k8s/prod",
+        "address": "https://192.168.49.2:8443",
+        "namespace": "prod"
+    }
+}

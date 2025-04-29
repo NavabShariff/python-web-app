@@ -1,0 +1,9 @@
+{
+    "cluster": {
+        "owner": "shariff",
+        "name": "dev",
+        "path": "k8s/dev",
+        "address": "http://kubernetes.default.svc",
+        "namespace": "dev"
+    }
+}

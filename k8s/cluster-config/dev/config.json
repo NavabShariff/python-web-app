@@ -2,7 +2,7 @@
     "cluster": {
         "owner": "shariff",
         "name": "dev",
-        "path": "k8s/dev",
+        "path": "k8s/dev-manifests",
         "address": "http://kubernetes.default.svc",
         "namespace": "dev"
     }
